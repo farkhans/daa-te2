@@ -1,6 +1,6 @@
 # Python3 program for the above approach
-import time
-import os, psutil
+import time, psutil
+from create_input import *
 # Function to check whether there
 # exists a Hamiltonian Path or not
 def Hamiltonian_path(adj, N):
@@ -47,26 +47,10 @@ def Hamiltonian_path(adj, N):
 	return False
 
 # Driver Code
-adj = [
-[0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-[1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-[0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-[0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-[0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-[0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-[0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0],
-[0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0],
-[0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0],
-[0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0],
-[0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0],
-[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0],
-[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0],
-[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0],
-[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1],
-[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0]
-]
+adj = create_input(16)
 
 N = len(adj)
+
 start = time.time()
 if (Hamiltonian_path(adj, N)):
 	print("YES")
@@ -76,5 +60,6 @@ end = time.time()
 
 print(f'Process took {end - start} seconds to finish')
 process = psutil.Process()
-print(f'Process took {process.memory_info().rss} bytes of memory')
+print(f'Process took {process.memory_info().rss} bytes of memory') 
+
 # This code is contributed by maheshwaripiyush9

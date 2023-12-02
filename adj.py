@@ -1,4 +1,5 @@
 def create_adj(n):
+    '''Fungsi ini mencetak matriks ketetanggaan dalam versi markdown'''
     for i in range(n):
         for j in range(n):
             if j == i + 1 or j + 1 == i:
@@ -10,4 +11,3 @@ def create_adj(n):
                     print(' \\\\')
             else:
                 print('&', end=' ')
-create_adj(20)

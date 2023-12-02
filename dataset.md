@@ -22,7 +22,7 @@ $$adj = \begin{bmatrix}
 ## Visualisasi Graf
 <div style="text-align:center;padding:20pt"><img src="kecil.png" /></div>
 
-# *Dataset* Ukuran Normal
+# *Dataset* Ukuran Sedang
 ## *Adjacency Matrix*
 $$adj = \begin{bmatrix}
 0 & 1 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0  \\
@@ -46,7 +46,7 @@ $$adj = \begin{bmatrix}
 \end{bmatrix}$$
 
 ## Visualisasi Graf
-<div style="text-align:center;padding:20pt"><img src="normal.png" /></div>
+<div style="text-align:center;padding:20pt"><img src="sedang.png" /></div>
 
 # *Dataset* Ukuran Besar
 ## *Adjacency Matrix*
